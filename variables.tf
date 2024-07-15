@@ -136,6 +136,13 @@ variable "cluster_timeouts" {
   default     = {}
 }
 
+variable "bootstrap_self_managed_addons" {
+  description = "Install default unmanaged add-ons, such as aws-cni, kube-proxy, and CoreDNS during cluster creation"
+  type        = bool
+  default     = true
+}
+
+
 ################################################################################
 # Access Entry
 ################################################################################
